@@ -20,6 +20,7 @@ test('format_plural() returns a pluralized word', () => {
 
 const {format_url} = require('../utils/helpers');
 // test to return a more simple url
+// remove .www
 test('format_url() returns a simplified url string', () => {
     const url1 = format_url('http://test.com/page/1');
     const url2 = format_url('https://www.coolstuff.com/abcdefg/');
