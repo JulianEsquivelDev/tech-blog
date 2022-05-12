@@ -96,4 +96,4 @@ router.get('/post/:id', (req, res) => {
     });
 });
 
-model.exports = router;
+module.exports = router;
