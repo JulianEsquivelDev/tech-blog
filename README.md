@@ -2,6 +2,7 @@
 
 ## About the application
 
+A tech blog site created using Handlebars.js , Sequelize, and express. Users can login, post, edit, and comment on the blog. 
 
 ## User Story
 
