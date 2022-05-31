@@ -1,9 +1,10 @@
+// function to add post to blog
 async function addPostHandler(event) {
     event.preventDefault();
 
     const postTitle = document.querySelector('input[name="post-title"]').value;
     const postContent = document.querySelector('input[name="post-content"]').value;
-
+// fetch the api "POST"
     const response = await fetch(`/api/posts`, {
         method: 'POST',
         body: JSON.stringify({

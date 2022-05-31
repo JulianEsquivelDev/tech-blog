@@ -1,3 +1,4 @@
+// function to create a post
 async function createPostHandler(event) {
     event.preventDefault();
 

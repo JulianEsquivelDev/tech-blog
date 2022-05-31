@@ -1,3 +1,4 @@
+// function to comment on post
 async function commentHandler(event) {
     event.preventDefault();
 
@@ -6,7 +7,7 @@ async function commentHandler(event) {
     const postId = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];
-
+// fetch the api POST from comments
     if (commentText) {
         const response = await fetch('/api/comments', {
             method: 'POST',

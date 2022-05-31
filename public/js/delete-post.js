@@ -1,10 +1,11 @@
+// function to delete a post
 async function deletePostHandler(event) {
     event.preventDefault();
     
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ]
-
+// fetch method delete
     const response = await fetch(`/api/posts/${id}`, {
         method: 'delete',
         body: JSON.stringify({
